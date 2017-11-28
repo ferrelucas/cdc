@@ -10,7 +10,9 @@ app.get('/produtos', function(req, res){
 	res.render("produtos/lista")
 })
 
-app.listen(3000, function(){
+var porta = process.env.PORT || 3000;
+app.listen(porta, function(){
+	console.log("Servidor subindo na porta " + porta)
 	console.log("Servidor rodando..")
 })
 
