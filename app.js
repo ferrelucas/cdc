@@ -3,7 +3,7 @@ var app = require('express')();
 app.set('view engine', 'ejs')
 
 app.get('/', function(req, res){
-	res.send("<html><body><h1>Home</h1></body></html>")
+	res.render("home")
 })
 
 app.get('/produtos', function(req, res){
